@@ -18,11 +18,7 @@ namespace _2006204794
             {
                 return _NumeroCuenta;                
             }
-            set
-            {
-                if (value > 0)
-                    _NumeroCuenta = value;
-            }
+           
         }
 
         public int Pin
@@ -52,16 +48,9 @@ namespace _2006204794
             }
         }
 
-        public Cuenta(int numeroCuenta, int pin, decimal monto )
-         {
-            NumeroCuenta = numeroCuenta;
-            Pin = pin;
-            Monto = monto;
+     
+        public Cuenta()
+        {
         }
-
-
-
-
-
     }
 }

@@ -8,14 +8,46 @@ namespace _2006204794
 {
     public class BaseDatos
     {
-        private List<Cuenta> _Cuenta;
+        private Cuenta _Cuenta;
 
-        public BaseDatos(int numBaseDatos)
+        public BaseDatos()
         {
-            _Cuenta = new List<Cuenta>(numBaseDatos);
+            _Cuenta = new Cuenta();
+        }
+
+        public bool AutenticarUsuario(int numeroCuenta, int pin)
+        {
+            if (_Cuenta.NumeroCuenta == numeroCuenta && _Cuenta.Pin==pin)
+            {
+                return true;
+            }
+            return false;
+            
         }
 
 
+        public decimal ObtenerSaldoDisponible(int numeroCuenta)
+        {
+            if (_Cuenta.NumeroCuenta == numeroCuenta)
+            {
+                return _Cuenta.Monto;
+            }else
+            {
+                return 0;
+            }
+        }
+
+        public decimal ObtenerSaldoTotal(int numeroCuenta)
+        {
+            if (_Cuenta.NumeroCuenta == numeroCuenta)
+            {
+                return _Cuenta.Monto;
+            }
+            else
+            {
+                return 0;
+            }
+        }
 
 
 
