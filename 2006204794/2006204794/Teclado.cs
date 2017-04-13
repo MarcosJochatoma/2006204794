@@ -6,7 +6,14 @@ using System.Threading.Tasks;
 
 namespace _2006204794
 {
-    class Teclado
+    public class Teclado
     {
+        
+
+
+
+
+
+
     }
 }
