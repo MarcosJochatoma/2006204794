@@ -6,7 +6,13 @@ using System.Threading.Tasks;
 
 namespace _2006204794
 {
-    class ATM
+    public class ATM
     {
+        private List<RanuraDeposito> _RanuraDeposito;
+
+        public ATM(int numDeposito)
+        {
+            _RanuraDeposito = new List<RanuraDeposito>(numDeposito);
+        }
     }
 }
