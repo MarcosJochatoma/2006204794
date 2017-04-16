@@ -10,21 +10,29 @@ namespace _2006204794
     {
         private List<RanuraDeposito> _RanuraDeposito;
         private List<Teclado> _Teclado;
+        private List<DispensadorEfectivo> _DispensadorEfectivo;
+        private List<Pantalla> _Pantalla;
        
      
-        public BaseDatos BaseDatos
-        {
-            get;set;
-        }
-
-
+       
         public ATM()
         {
             _RanuraDeposito = new List<RanuraDeposito>();
             _Teclado = new List<Teclado>();
+            _DispensadorEfectivo = new List<DispensadorEfectivo>();
+            _Pantalla = new List<Pantalla>();
         }
 
-           
+        
+        public BaseDatos BaseDatos
+        {
+            get; set;
+        }
+
+        public Retiro Retiro
+        {
+            get;set;
+        }
 
 
 

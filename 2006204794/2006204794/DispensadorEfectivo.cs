@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace _2006204794
 {
-    class DispensadorEfectivo
+    public class DispensadorEfectivo
     {
     }
 }

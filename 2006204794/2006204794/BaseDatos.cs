@@ -9,6 +9,7 @@ namespace _2006204794
     public class BaseDatos
     {
         private Cuenta _Cuenta;
+
         public ATM ATM
         {
             get;set;
@@ -68,13 +69,13 @@ namespace _2006204794
         public void Debitar(int numeroCuenta, decimal monto)
         {
             if (_Cuenta.NumeroCuenta == numeroCuenta)
-                _Cuenta.Monto += monto;
+                _Cuenta.Monto -= monto;
         }
 
         public void Acreditar(int numeroCuenta, decimal monto)
         {
             if (_Cuenta.NumeroCuenta == numeroCuenta)
-                _Cuenta.Monto -= monto;
+                _Cuenta.Monto += monto;
             
         }
       

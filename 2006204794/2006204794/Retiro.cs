@@ -10,12 +10,12 @@ namespace _2006204794
     {
         public ATM ATM
         {
-            get;set;
+            get; set;
         }
 
         public BaseDatos BaseDatos
         {
-            get;set;
+            get; set;
         }
 
         public decimal MontoDisponible
@@ -31,6 +31,14 @@ namespace _2006204794
         {
             ATM = atm;
         }
+
+      //  public void Modifica()
+        //{
+        //    if ()
+          //  {
+
+            //}
+        //}
 
       
 
