@@ -6,7 +6,29 @@ using System.Threading.Tasks;
 
 namespace _2006204794
 {
-    class Pantalla
+    public class Pantalla
     {
+        private int _NumeroCuenta;
+        private int _Pin;
+
+        public int NumeroCuenta
+        {
+            get
+            {
+                return _NumeroCuenta;
+            }
+            set
+            {
+                if(value>0)
+                    _NumeroCuenta=value;
+            }
+        }
+
+
+
+
+
+
+
     }
 }

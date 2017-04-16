@@ -18,6 +18,11 @@ namespace _2006204794
             {
                 return _NumeroCuenta;                
             }
+            set
+            {
+                if (value > 0)
+                    _NumeroCuenta = value;
+            }
            
         }
 

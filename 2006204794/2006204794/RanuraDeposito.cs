@@ -8,20 +8,25 @@ namespace _2006204794
 {
     public class RanuraDeposito
     {
-        private int _Deposito;
+        private decimal _Deposito;
 
-        public int Deposito
+        public decimal Deposito
         {
             get
             {
                 return _Deposito;
             }
+            set
+            {
+                if (value > 0)
+                    _Deposito = value;
+            }
 
         }
 
-        public RanuraDeposito(int deposito)
+        public RanuraDeposito(decimal deposito)
         {
-            _Deposito = deposito;
+            Deposito = deposito;
         }
 
 

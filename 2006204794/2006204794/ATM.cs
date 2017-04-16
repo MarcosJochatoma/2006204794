@@ -9,10 +9,37 @@ namespace _2006204794
     public class ATM
     {
         private List<RanuraDeposito> _RanuraDeposito;
-
-        public ATM(int numDeposito)
+        private List<Teclado> _Teclado;
+       
+     
+        public BaseDatos BaseDatos
         {
-            _RanuraDeposito = new List<RanuraDeposito>(numDeposito);
+            get;set;
         }
+
+
+        public ATM()
+        {
+            _RanuraDeposito = new List<RanuraDeposito>();
+            _Teclado = new List<Teclado>();
+        }
+
+           
+
+
+
+        public void Autenticar()
+        {
+            bool date = BaseDatos.AutenticarUsuario(1000, 123);
+            if (date.Equals(true))
+                Console.WriteLine("Número de Cuenta no registrada [{0}]", 1000);
+        }
+
+
+
+
+
+
+
     }
 }

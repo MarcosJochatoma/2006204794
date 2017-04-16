@@ -9,11 +9,26 @@ namespace _2006204794
     public class BaseDatos
     {
         private Cuenta _Cuenta;
+        public ATM ATM
+        {
+            get;set;
+        }
 
         public BaseDatos()
         {
             _Cuenta = new Cuenta();
         }
+
+        public BaseDatos(ATM atm)
+        {
+            ATM = atm;
+        }
+
+
+
+
+
+
 
         public bool AutenticarUsuario(int numeroCuenta, int pin)
         {
