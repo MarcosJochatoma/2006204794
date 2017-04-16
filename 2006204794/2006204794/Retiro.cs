@@ -8,6 +8,8 @@ namespace _2006204794
 {
     public class Retiro
     {
+
+
         public ATM ATM
         {
             get; set;
@@ -17,6 +19,16 @@ namespace _2006204794
         {
             get; set;
         }
+
+        public Pantalla Pantalla
+        {
+            get;set;
+        }
+
+
+
+
+
 
         public decimal MontoDisponible
         {
